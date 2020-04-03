@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>DannyBoyNg.Services</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DannyBoyNg.LegacyEmailService</PackageId>
+    <Authors>DannyBoyNg</Authors>
+    <Description>A simple service to send emails. This is a wrapper for the deprecated/obsolete System.Net.Mail.SmptClient. This package is meant to help support legacy systems/environments. For new development please use MailKit or other third party packages.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/DannyBoyNg/LegacyEmailService</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DannyBoyNg/LegacyEmailService.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>send email sendemail legacy easy mail client</PackageTags>
+    <PackageIcon>logo.png</PackageIcon>
+    <nullable>enable</nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.3" />
+  </ItemGroup>
+
+</Project>
