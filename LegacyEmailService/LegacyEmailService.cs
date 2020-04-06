@@ -4,7 +4,7 @@ using System.IO;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace DannyBoyNg.Services
+namespace Ng.Services
 {
     public class LegacyEmailService : ILegacyEmailService
     {

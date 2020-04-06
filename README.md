@@ -10,7 +10,7 @@ Microsoft.Extensions.Options
 
 Install from Nuget
 ```
-Install-Package DannyBoyNg.LegacyEmailService
+Install-Package Ng.LegacyEmailService
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Install-Package DannyBoyNg.LegacyEmailService
 Console application
 
 ```csharp
-using DannyBoyNg.Services;
+using Ng.Services;
 ...
 static async Task Main(string[] args)
 {
@@ -41,7 +41,7 @@ ASP.NET Core
 
 Register service with dependency injection in Startup.cs
 ```csharp
-using DannyBoyNg.Services;
+using Ng.Services;
 ...
 public void ConfigureServices(IServiceCollection services)
 {
@@ -60,7 +60,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Inject ILegacyEmailService into a Controller or wherever you like
 ```csharp
-using DannyBoyNg.Services;
+using Ng.Services;
 ...
 public class MyController
 {

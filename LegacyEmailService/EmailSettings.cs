@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace DannyBoyNg.Services
+namespace Ng.Services
 {
     public class EmailSettings
     {

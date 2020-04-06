@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <RootNamespace>DannyBoyNg.Services</RootNamespace>
+    <RootNamespace>Ng.Services</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>DannyBoyNg.LegacyEmailService</PackageId>
+    <PackageId>Ng.LegacyEmailService</PackageId>
     <Authors>DannyBoyNg</Authors>
     <Description>A simple service to send emails. This is a wrapper for the deprecated/obsolete System.Net.Mail.SmptClient. This package is meant to help support legacy systems/environments. For new development please use MailKit or other third party packages.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
