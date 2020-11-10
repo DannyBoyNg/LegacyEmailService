@@ -45,7 +45,8 @@ namespace Ng.Services
             {
                 foreach (var file in files)
                 {
-                    var stream = new MemoryStream(file.FileData as byte[]);
+                    if (file.FileData is not byte[] buffer) continue;
+                    var stream = new MemoryStream(buffer);
                     var attachment = new System.Net.Mail.Attachment(stream, file.FileName);
                     message.Attachments.Add(attachment);
                 }
@@ -55,7 +56,6 @@ namespace Ng.Services
             await task.ConfigureAwait(false);
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1031:Do not catch general exception types", Justification = "Exceptions not of interest. Just need to know if email address is valid or not.")]
         public bool IsEmailValid(string email)
         {
             try
